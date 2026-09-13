@@ -40,4 +40,4 @@ int main(int argc, char **argv)
 // also in Cmakelist.txt add find_package(example_interfaces REQUIRED)
 // also add excutable in .txt file: add_executable(robot_news_station src/robot_news_station.cpp)
 // target_link_libraries(robot_news_station PUBLIC rclcpp::rclcpp example_interfaces::example_interfaces__rosidl_typesupport_cpp)
-//also add this under install:   robot_news_stationcl
+//also add this under install:   robot_news_stationc

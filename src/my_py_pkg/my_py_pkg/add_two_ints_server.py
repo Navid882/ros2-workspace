@@ -30,5 +30,3 @@ def main(args=None):
 if __name__ == "__main__":
     main()
 
-# we add "add_two_ints_server = my_py_pkg.add_two_ints_server:main",
-#in setup.py

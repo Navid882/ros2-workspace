@@ -19,7 +19,6 @@ public:
         {
             RCLCPP_WARN(this->get_logger(), "Waiting for the server to be up...");
         }
-
         auto request = std::make_shared<example_interfaces::srv::AddTwoInts::Request>();
         request->a = a;
         request->b = b;

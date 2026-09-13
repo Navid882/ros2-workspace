@@ -25,6 +25,7 @@ private:
 
         rclcpp::Service<example_interfaces::srv::AddTwoInts>::SharedPtr server_;
 };
+//not like python dont need futuer varor return anything in functio the object will be filled by reponse
 
 int main(int argc, char **argv)
 {

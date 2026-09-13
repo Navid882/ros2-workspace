@@ -29,4 +29,3 @@ def main(args=None):
 if __name__ == "__main__":
     main()
 
-# we add this in setup.py : "smartphone = my_py_pkg.smartphone:main"

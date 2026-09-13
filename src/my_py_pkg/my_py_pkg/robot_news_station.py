@@ -30,7 +30,3 @@ def main(args=None):
 if __name__ == "__main__":
     main()
 
-#add in setup.py this: "robot_news_station = my_py_pkg.robot_news_station:main"
-#ros2 interface show example_interfaces/msg/String : this ready message will be use
-#also need add dependencies in package.xml.   <depend>example_interfaces</depend>
-#test this command ros2 topic list, ros2 node list, ros2 topic echo /robot_news

@@ -11,10 +11,14 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 find_package(rosidl_default_generators)
-
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HardwareStatus.msg"
-  "srv/ComputeRectangleArea.srv")
+  "msg/LedStateArray.msg"
+  "srv/ComputeRectangleArea.srv"
+  "srv/SetLed.srv"
+)
+
+include(CheckLibraryExists)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

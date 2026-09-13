@@ -21,7 +21,7 @@ class AddTwoIntsClientNode(Node):
         request.a = a
         request.b = b
 
-        future = client.call_async(request) 
+        future = client.call_async(request) #a place for holding responce in future
         future.add_done_callback(partial(self.callback_call_add_two_ints, a=a, b=b))
 
     def callback_call_add_two_ints(self, future, a, b):
