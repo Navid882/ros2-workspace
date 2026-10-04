@@ -19,5 +19,6 @@
         "/home/ros2/ros2_ws/install/my_robot_interfaces/lib/python3.14/site-packages",
         "/opt/ros/lyrical/opt/gz_math_vendor/lib/python",
         "/opt/ros/lyrical/lib/python3.14/site-packages"
-    ]
+    ],
+    "cmake.sourceDirectory": "/home/ros2/ros2_ws/src/my_cpp_pkg"
 }

@@ -39,10 +39,17 @@ target_link_libraries(add_two_ints_client PUBLIC
   rclcpp::rclcpp
   example_interfaces::example_interfaces__rosidl_typesupport_cpp)
 
+add_executable(number_counter src/number_counter.cpp)
+target_link_libraries(number_counter PUBLIC 
+  rclcpp::rclcpp
+  example_interfaces::example_interfaces__rosidl_typesupport_cpp)
+
 add_executable(hw_status_publisher src/hw_status_publisher.cpp)
 target_link_libraries(hw_status_publisher PUBLIC
    rclcpp::rclcpp 
    my_robot_interfaces::my_robot_interfaces__rosidl_typesupport_cpp)
+
+
 # Install executable
 install(
   TARGETS
@@ -53,6 +60,8 @@ install(
     add_two_ints_client_basic
     add_two_ints_client
     hw_status_publisher
+    number_counter
+
   DESTINATION lib/${PROJECT_NAME}
 )
 
